@@ -15,7 +15,7 @@ class UserIn(UserBase):
 class UserOut(UserBase):
     id: int
     created_at: datetime
-    phone_number: str
+    phone_number: str | None
 
 
 class PostBase(BaseModel):
