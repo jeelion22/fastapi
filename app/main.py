@@ -27,4 +27,11 @@ app.include_router(vote.router)
 
 @app.get("/")
 def root():
-    return {"message": "Hello World"}
+    return {
+        "Greetings": "Hello World!",
+        "me": "Jeeva",
+        "app_name": "Posts-APIs",
+        "message": "Welcome to Posts-APIs! This is the home page for our sample API endpoints built with FastAPI.",
+        "description": "Our API allows you to create, read, modify, delete, and vote on posts. For detailed documentation, please visit our API documentation page.",
+        "api_doc_url": "https://fastapi-posts-endpoints-jeeva-ca5c7ab434e2.herokuapp.com/docs",
+    }
