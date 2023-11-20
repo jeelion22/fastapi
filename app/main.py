@@ -36,7 +36,7 @@ def root():
         "urls": {
             "on_heroku": "https://fastapi-posts-endpoints-jeeva-ca5c7ab434e2.herokuapp.com/docs",
             "on_virtualmachine": {
-                "root": "https://www.fastapi-blog-jeeva.xyc",
+                "root": "https://www.fastapi-blog-jeeva.xyz",
                 "docs": "https://www.fastapi-blog-jeeva.xyz/docs/",
             },
         },
