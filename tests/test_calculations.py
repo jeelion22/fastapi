@@ -1,5 +1,5 @@
 import pytest
-from app.calculations import (
+from calculations import (
     add,
     subtract,
     multiply,
