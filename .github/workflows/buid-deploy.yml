@@ -32,5 +32,3 @@ jobs:
         run: |
           pip install pytest
           pytest
-      - name: just prints the name
-        uses: echo "Hello jeeva"
