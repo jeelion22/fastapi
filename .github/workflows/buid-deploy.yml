@@ -31,5 +31,4 @@ jobs:
       - name: test with pytest
         run: |
           pip install pytest
-          # pytest -v -x
-          echo "Hello Jeeva"
+          pytest -v -x
