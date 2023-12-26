@@ -3,17 +3,15 @@ on: [push, pull_request]
 
 jobs:
   job1:
-    environment:
-      name: testing
     env:
-      DATABASE_NAME: ${{secrets.DATABASE_NAME}}
-      DATABASE_HOSTNAME: ${{secrets.DATABASE_HOSTNAME}}
-      DATABASE_PORT: ${{secrets.DATABASE_PORT}}
-      DATABASE_USERNAME: ${{secrets.DATABASE_USERNAME}}
-      DATABASE_PASSWORD: ${{secrets.DATABASE_PASSWORD}}
-      SECRET_KEY: ${{secrets.SECRET_KEY}}
-      ALGORITHM: ${{secrets.ALGORITHM}}
-      ACCESS_TOKEN_EXPIRE_MINUTES: ${{secrets.ACCESS_TOKEN_EXPIRE_MINUTES}}
+      DATABASE_NAME: fastapi
+      DATABASE_HOSTNAME: localhost
+      DATABASE_PORT: 5432
+      DATABASE_USERNAME: postgres
+      DATABASE_PASSWORD: poornashrI08
+      SECRET_KEY: 7ef1f2294a0aa0e65334313fd64f98bfe39a943b760f775cf3631c9214a3a9db
+      ALGORITHM: HS256
+      ACCESS_TOKEN_EXPIRE_MINUTES: 60
 
     runs-on: ubuntu-latest
     steps:
